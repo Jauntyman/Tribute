@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I'Frame and form tags</title>
+    <!-- iframe  is an inline  element and we use the i-frame tag. When using iframe to link, we'll clear the border then put link in the src as shown below.-->
+</head>
+<style> 
+#Fname{ display: block;
+  width:70%; height: 5vh;
+  border-radius: 5px 10px 20px;
+  border:2px dotted blue;
+  font-size: 20px;padding-left: 30px; margin-left: 20px;
+}
+#Fame{display: block;}
+#gr{ display: block}
+  #Su{ display: block; margin: 0 auto;}
+</style>
+
+<body>
+<iframe src="https://www.google.com"></iframe> <hr />
+<!--Form tag.-->
+<form action="/PROJECT./Project1.html">
+  <label for="Fname">First Name</label><br /> <!-- This is used in creating form to fill online. The label will display what we want, wether first name or last name. 'type text will display it in form of text. Plaeceholder will display here but not in the play.  'name' is to specified that it is name we dealing with. It is necessary, but compulsory-->
+  <input type="text" placeholder="Enter your first name" name="Fname" id="Fname">
+  <label for="pass">Password</label><br />
+  <input type="text" placeholder="Enter password" /><hr />
+<!-- action here is used to link where we want our form submit to go. We can use any file.  -->
+  <form action=Project1.html>
+    <label for="Fname">First name</label><br />
+    <input type="text" placeholder="Enter your First Name" name="Fname" id="Fame"/>
+    <label for="Pass">Password</label><br />
+    <input type="text " placeholder="Enter Password" maxlength="10"/><br />
+    <label for="email">Email</label><br />
+    <input type="email" name="email" id="gr" value="" placeholder="Enter your Email"/><br />
+    <label for="gender">Gender</label><br />
+    <input type="radio" name="Female" id="" value="" />
+    <label for="gender">Male</label>
+    <input type="radio" name="Female" id="" value="" />
+    <label for="gender">Female</label>
+    <input type="radio" name="Female" id="" value="" />
+    <label for="gender">Others</label><hr />
+
+<fieldset>
+  <legend>Gender</legend>  <input type="radio" name="Gender" id="" value="" />
+    <label for="gender">Male</label><br />
+    <input type="radio" name=Gender id="" value="" />
+    <label for="gender">Female</label><br />
+    <input type="radio" name="Gender" id="" value="" />
+    <label for="gender">Others</label>
+    
+
+</fieldset><hr />
+<!-- Creating Fieldset-->
+<fieldset>
+  <legend>How many languages can you speak</legend>
+  <input type="checkbox" name="Yoruba" id="" value="Yoruba"/>
+  <label for="Yoruba">Yoruba</label><br />
+  <input type="checkbox" name="English" id="" value="English" />
+  <label for="">English</label>
+  
+</fieldset>
+<!-- Submit usually be at the end of fieldset. We can style our Submit the way we like. as below-->
+<input type="submit" name="" id="Su" value="SUBMIT" />
+  </form>
+
+</body>
+
+</html>
